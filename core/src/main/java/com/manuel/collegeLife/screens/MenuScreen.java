@@ -24,12 +24,12 @@ public class MenuScreen implements Screen {
     }
 
     @Override
-    public void render(float v) {
+    public void render(float delta) {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        player.update(delta);
 
         batch.begin();
         batch.draw(player.getTexture(), player.getPosition().x, player.getPosition().y);
-        // Aquí dibujarás el menú
         batch.end();
     }
 
