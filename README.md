@@ -1,4 +1,5 @@
 # collegeLife
+CollegeLife is a portafolio game that tells different experiences and adventures I lived/I'm living in my university experience
 
 A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
