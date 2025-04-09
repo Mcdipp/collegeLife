@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.manuel.collegeLife.screens.MenuScreen;
+import com.manuel.collegeLife.screens.TestScreen;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class MainGame extends Game {
@@ -15,7 +16,8 @@ public class MainGame extends Game {
     @Override
     public void create() {
         batch = new SpriteBatch();
-        setScreen(new MenuScreen(this));
+        this.setScreen(new MenuScreen(this));
+        this.setScreen(new TestScreen(this));
     }
 
     @Override
