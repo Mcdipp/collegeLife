@@ -5,9 +5,8 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.manuel.collegeLife.entities.Player;
+import com.manuel.collegeLife.entities.*;
 import com.manuel.collegeLife.game.MainGame;
-
 
 public class MenuScreen implements Screen {
     private MainGame game;
@@ -32,9 +31,6 @@ public class MenuScreen implements Screen {
         batch.begin();
         batch.draw(player.getTexture(), player.getPosition().x, player.getPosition().y);
         batch.end();
-//        if (Gdx.input.isKeyJustPressed(Input.Keys.ENTER)) {
-//            game.setScreen(new GameScreen(game));
-//        }
     }
 
     @Override

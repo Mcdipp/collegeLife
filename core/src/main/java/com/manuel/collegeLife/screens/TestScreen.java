@@ -13,7 +13,7 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.manuel.collegeLife.game.MainGame;
 
 public class TestScreen implements Screen {
-    private MainGame game;
+    public MainGame game;
     private Stage stage;
 
     public TestScreen(MainGame game) {

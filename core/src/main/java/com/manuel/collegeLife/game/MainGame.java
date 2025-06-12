@@ -1,13 +1,8 @@
 package com.manuel.collegeLife.game;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.utils.ScreenUtils;
-import com.manuel.collegeLife.screens.MenuScreen;
-import com.manuel.collegeLife.screens.TestScreen;
+import com.manuel.collegeLife.screens.*;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class MainGame extends Game {
@@ -17,7 +12,6 @@ public class MainGame extends Game {
     public void create() {
         batch = new SpriteBatch();
         this.setScreen(new MenuScreen(this));
-        this.setScreen(new TestScreen(this));
     }
 
     @Override
@@ -35,6 +29,7 @@ public class MainGame extends Game {
     }
 
     public void end(){
-        batch.begin();
+        batch.end();
     }
+
 }
