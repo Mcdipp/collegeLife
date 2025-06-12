@@ -1,10 +1,11 @@
 package com.manuel.collegeLife.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.manuel.collegeLife.entities.Player;
+import com.manuel.collegeLife.entities.*;
 import com.manuel.collegeLife.game.MainGame;
 
 public class MenuScreen implements Screen {
@@ -14,13 +15,12 @@ public class MenuScreen implements Screen {
 
     public MenuScreen(MainGame game) {
         this.game = game;
-        this.batch = game.batch; // Usar el SpriteBatch del juego
+        this.batch = game.batch;
         this.player = new Player();
     }
 
     @Override
     public void show() {
-        // Aquí podrías cargar assets del menú
     }
 
     @Override
