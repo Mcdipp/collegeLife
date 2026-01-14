@@ -34,6 +34,15 @@ public class Player {
     public void render(SpriteBatch batch){
     }
 
+
+    public float getWidth() {
+        return texture.getWidth();
+    }
+
+    public float getHeight() {
+        return texture.getHeight();
+    }
+
     public void dispose() {
         texture.dispose();
     }
