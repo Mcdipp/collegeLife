@@ -4,6 +4,12 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.manuel.collegeLife.screens.*;
 
+//Qué hace MainGame, vive durante toda la ejecución del juego
+//Guarda recursos compartidos: SpriteBatch
+//(en el futuro: AssetManager, música, etc.) Decide qué Screen está activa
+
+//NO dibuja nada directamente
+//SOLO delega a la Screen activa
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class MainGame extends Game {
     public SpriteBatch batch;
