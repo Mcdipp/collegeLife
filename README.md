@@ -8,6 +8,15 @@ This project was generated with a template including simple application launcher
 ## Platforms
 
 - `core`: Main module with the application logic shared by all platforms.
+- `Game` (MainGame)
+ ├── Screens (StartScreen, MenuScreen, GameScreen…)
+ │     └── Controls what is seen and what is executed.
+ ├── Entities (Player, NPC, etc.)
+ │     └── Game objects
+ ├── World
+ │     └── Map, world logic
+ ├── Utils
+ │     └── Ayudas (constantes, loaders, animaciones)
 - `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
 
 ## Gradle
